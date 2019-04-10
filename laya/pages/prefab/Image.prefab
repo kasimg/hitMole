@@ -1,0 +1,1 @@
+{"type":"Sprite","props":{"texture":"ui/mouse_hit_1.png","y":0,"var":"hitMole","preset":"laya/pages/prefab/Image.prefab","presetID":1,"isPresetRoot":true,"x":0},"compId":5,"child":[],"isAniNode":true,"nodeParent":7,"searchKey":"Sprite,hitMole","label":"hitMole","isDirectory":false,"hasChild":false,"x":30}
