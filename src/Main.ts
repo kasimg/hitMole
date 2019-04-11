@@ -1,5 +1,6 @@
 import GameConfig from "./GameConfig";
-// import {GameUI} from "./ui/layaMaxUI";
+import GameUI from "./GameUI";
+import { ui } from "./ui/layaMaxUI";
 class Main {
 	constructor() {
 		this.initBackground();
@@ -16,10 +17,12 @@ class Main {
 
 		//  加载图像，使得图像资源能够被访问（非常必要！！！！！）
 		Laya.loader.load(resArray, Laya.Handler.create(this, () => {
-			Laya.Scene.open('../laya/pages/gameBackground.scene'); // 因为默认路径是bin，所以这里不能用相对路径
+			const view: GameUI = new GameUI();
+			Laya.stage.addChild(view);
 		}));
 
 	}
+
 }
 //激活启动类
 new Main();
